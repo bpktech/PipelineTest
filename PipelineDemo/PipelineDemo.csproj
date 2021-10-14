@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\appspec.yml" />
+    <Content Remove="wwwroot\buildspec.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\appspec.yml" />
+    <None Include="wwwroot\buildspec.yml" />
+  </ItemGroup>
+
 </Project>
