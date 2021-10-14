@@ -4,6 +4,9 @@ phases:
     commands:
       - echo Restore started on `date`
       - dotnet restore PipelineDemo/PipelineDemo.csproj
+      install:
+        runtime-versions:
+            dotnet: 3.1
   build:
     commands:
       - echo Build started on `date`
